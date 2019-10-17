@@ -1623,7 +1623,7 @@
 	}
 
 	body {
-		background: #242943;
+		background: #0f111c;
 	}
 
 		body.is-loading *, body.is-loading *:before, body.is-loading *:after {
@@ -1640,15 +1640,22 @@
 /* Type */
 
 	body, input, select, textarea {
-		color: #ffffff;
+		color: #ffff;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 17pt;
-		font-weight: 300;
-		letter-spacing: 0.025em;
-		line-height: 1.65;
+		font-weight: 400;
+		letter-spacing: 0.1em;
+		line-height: 1.95;
 	}
 
 		@media screen and (max-width: 1680px) {
+
+			body, input, select, textarea {
+				font-size: 18pt;			}
+
+		}
+
+		@media screen and (max-width: 1280px) {
 
 			body, input, select, textarea {
 				font-size: 14pt;
@@ -1656,18 +1663,10 @@
 
 		}
 
-		@media screen and (max-width: 1280px) {
-
-			body, input, select, textarea {
-				font-size: 12pt;
-			}
-
-		}
-
 		@media screen and (max-width: 360px) {
 
 			body, input, select, textarea {
-				font-size: 11pt;
+				font-size: 12pt;
 			}
 
 		}
@@ -1688,7 +1687,7 @@
 		}
 
 		a:active {
-			color: #53e3fb !important;
+			color: #a7bfc2 !important;
 		}
 
 	strong, b {
@@ -1743,7 +1742,7 @@
 	@media screen and (max-width: 736px) {
 
 		h1 {
-			font-size: 2em;
+			font-size: 3em;
 		}
 
 		h2 {
@@ -1951,7 +1950,7 @@
 		-webkit-appearance: none;
 		-ms-appearance: none;
 		appearance: none;
-		background: rgba(212, 212, 255, 0.035);
+		background: #0f111c;
 		border: none;
 		border-radius: 0;
 		color: inherit;
@@ -1959,7 +1958,8 @@
 		outline: 0;
 		padding: 0 1em;
 		text-decoration: none;
-		width: 100%;
+		width: 50%;
+		resize:none;
 	}
 
 		input[type="text"]:invalid,
@@ -2538,11 +2538,11 @@
 		background-color: transparent;
 		border: 0;
 		border-radius: 0;
-		box-shadow: inset 0 0 0 2px #ffffff;
-		color: #ffffff;
+		box-shadow: inset 0 0 0 2px #a7bfc2;
+		color: #a7bfc2;
 		cursor: pointer;
 		display: inline-block;
-		font-size: 0.8em;
+		font-size: 0.5em;
 		font-weight: 600;
 		height: 3.5em;
 		letter-spacing: 0.25em;
@@ -2743,18 +2743,18 @@
     width: 90%;
     height: 90%;
     margin: 25px auto;
-    background-color: black;
+    background-color: #0f111c;
     font-family: sans-serif
 }
 
 .papaya:before {
     position: relative;
-    content: "Papaya requires JavaScript...";
-    display: block;
+    content: "JavaScript Required...";
+    display: inline-block;
     top: 45%;
     color: red;
     margin: 0 auto;
-    font-size: 18px;
+    font-size: 32px;
     font-family: sans-serif
 }
 
@@ -2765,12 +2765,12 @@
 .papaya-toolbar {
     text-align: left;
     box-sizing: content-box;
-    position: relative
+    position: relative;
 }
 
 .papaya-toolbar ul {
     margin: 0;
-    list-style: none
+    list-style: none;
 }
 
 .papaya-toolbar input[type=file] {
@@ -2798,7 +2798,7 @@
     -webkit-appearance: none;
     border-radius: 0;
     -webkit-border-radius: 0;
-    font-size: 14px;
+    font-size: 20px;
     height: 25px;
     background-color: lightgray
 }
@@ -2807,7 +2807,7 @@
     -webkit-appearance: none;
     border-radius: 0;
     -webkit-border-radius: 0;
-    font-size: 14px;
+    font-size: 24px;
     height: 25px;
     width: 25px;
     text-align: center;
@@ -2824,8 +2824,8 @@
     -webkit-appearance: none;
     border-radius: 0;
     -webkit-border-radius: 0;
-    font-size: 14px;
-    height: 25px;
+    font-size: 21x;
+    height: 15px;
     width: 25px;
     text-align: center;
     font-family: "Courier New", Courier, monospace;
@@ -2842,7 +2842,7 @@
     -webkit-appearance: none;
     border-radius: 0;
     -webkit-border-radius: 0;
-    font-size: 8px;
+    font-size: 18px;
     height: 25px;
     width: 25px;
     text-align: center;
@@ -2860,7 +2860,7 @@
     -webkit-appearance: none;
     border-radius: 0;
     -webkit-border-radius: 0;
-    font-size: 14px;
+    font-size: 18px;
     height: 25px;
     background-color: lightgray;
     outline: 0
@@ -2870,7 +2870,7 @@
     -webkit-appearance: none;
     border-radius: 0;
     -webkit-border-radius: 0;
-    font-size: 14px;
+    font-size: 18px;
     height: 25px;
     background-color: lightgray;
     outline: 0
@@ -2880,7 +2880,7 @@
     -webkit-appearance: none;
     border-radius: 0;
     -webkit-border-radius: 0;
-    font-size: 14px;
+    font-size: 18px;
     height: 25px;
     background-color: lightgray;
     outline: 0
@@ -2892,7 +2892,7 @@
 }
 
 .papaya-slider-slice span {
-    font-size: 14px;
+    font-size: 18px;
     font-family: sans-serif;
     vertical-align: middle
 }
@@ -2912,7 +2912,7 @@
 }
 
 .papaya-menu {
-    width: 220px;
+    width: 450px;
     background: #222;
     z-index: 100;
     position: absolute;
@@ -2922,29 +2922,29 @@
 }
 
 .papaya-menu li {
-    font-size: 12px;
+    font-size: 24px;
     font-family: sans-serif;
-    padding: 4px 2px;
+    padding: 6px 4px;
     color: #b5cbd3;
     cursor: pointer;
     list-style-type: none
 }
 
 .papaya-menu-label {
-    font-size: 14px;
+    font-size: 21px;
     font-family: sans-serif;
     font-weight: bold;
-    padding: 2px 8px;
+    padding: 25px 80px;
     cursor: pointer;
-    vertical-align: text-bottom
+    vertical-align: text-top
 }
 
 .papaya-menu-titlebar {
-    font-size: 16px;
+    font-size: 32px;
     font-family: sans-serif;
-    padding: 3px 8px 0 8px;
+    padding: 0px 0px 0px 920px;
     cursor: default;
-    vertical-align: text-bottom;
+    vertical-align: text-top;
     color: white
 }
 
@@ -2961,7 +2961,7 @@
 }
 
 .papaya-menu-spacer {
-    height: 8px
+    height: 10px
 }
 
 .papaya-menu-unselectable {
@@ -2986,9 +2986,9 @@
 }
 
 .papaya-menu-input {
-    width: 38px;
+    width: 5px;
     margin-right: 5px;
-    color: black
+    color: #0f111c
 }
 
 li .papaya-menu-slider {
@@ -3075,7 +3075,7 @@ li .papaya-menu-slider {
     background-color: #fff;
     width: 100%;
     height: 100%;
-    opacity: .5
+    opacity: .4
 }
 
 .papaya-dialog-stopscroll {
@@ -3087,7 +3087,7 @@ li .papaya-menu-slider {
     width: 90%;
     height: 90%;
     margin: 25px auto;
-    background-color: black
+    background-color: #0f111c
 }
 
 .checkForJS:before {
@@ -3121,7 +3121,7 @@ li .papaya-menu-slider {
 }
 
 .papaya-viewer {
-    line-height: 1;
+    line-height: 2;
     font-family: sans-serif
 }
 
@@ -3641,10 +3641,10 @@ li .papaya-menu-slider {
 					}
 
 					#header nav a[href="#menu"]:after {
-						-moz-transition: opacity 0.2s ease-in-out;
-						-webkit-transition: opacity 0.2s ease-in-out;
-						-ms-transition: opacity 0.2s ease-in-out;
-						transition: opacity 0.2s ease-in-out;
+						-moz-transition: opacity 0.25s ease-in-out;
+						-webkit-transition: opacity 0.25s ease-in-out;
+						-ms-transition: opacity 0.25s ease-in-out;
+						transition: opacity 0.25s ease-in-out;
 						background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='32' viewBox='0 0 24 32' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 2px%3B stroke: %239bf1ff%3B %7D%3C/style%3E%3Cline x1='0' y1='11' x2='24' y2='11' /%3E%3Cline x1='0' y1='21' x2='24' y2='21' /%3E%3Cline x1='0' y1='16' x2='24' y2='16' /%3E%3C/svg%3E");
 						opacity: 0;
 						z-index: 1;
