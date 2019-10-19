@@ -1,0 +1,9 @@
+export LANDING=${landing}
+# Customizable Parameters for pages/group.landing.html
+export PAGETITLE=${PROJECTNAME}'| FreeSurfer Average Subject Report'
+export HEADERNAME=${PROJECTNAME}': Group Averaged Reports'
+export DESCRIPTION='Select from different group summaries'	
+export TILES=("volume-atlas" "brainmask-edits-summary" "thickness" "sulcal-depth" "gaussian-curvature" "surface-parcellation" "surface-parcellation-2009s")
+export TILEPAGES=($(printf ${LANDING}'.%s ' ${TILES[@]}))
+export TILEPICS=("atlas" "edits" "thickness" "sulc" "curv" "parc" "parc")
+export TILEDESCRIPTIONS=('')

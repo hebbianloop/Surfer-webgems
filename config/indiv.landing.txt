@@ -1,0 +1,9 @@
+export LANDING=${landing}
+# Customizable Parameters for pages/indiv.landing.html
+export PAGETITLE=${PROJECTNAME}'| Subject Index'
+export HEADERNAME=${PROJECTNAME}': Subject Index'	
+export DESCRIPTION='Browse brain volumes, surfaces, summary reports and statistics'		
+export TILES=(${SUBJECTS[@]})
+export TILEPAGES=($(printf ${LANDING}'.%s ' ${TILES[@]}))
+export TILEPICS=($(printf 'tile.%s ' ${TILES[@]}))
+export TILEDESCRIPTIONS=('')
