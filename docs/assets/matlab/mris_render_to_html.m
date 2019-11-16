@@ -1,4 +1,0 @@
-
-function 
-
-mris_display()

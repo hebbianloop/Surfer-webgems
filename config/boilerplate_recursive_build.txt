@@ -1,0 +1,34 @@
+surfergems_html
+	surfergems_html_init
+		- clone report dir if does not exist
+		- make average if user specified
+		- convert all mgzs / surfs
+		- build papaya web viewers if user specified volume
+		surfergems_html_init_index 
+			- iteratively build menu and sections by looping over datasets
+			for d in dataset; do
+				<nav id="menu">
+				    <ul class="links">
+				        <li><a href="../index.html">Home</a></li>
+				        ##### ITERATE OVER THIS LINE (ITERATIVE APPEND)
+				        <li><a href="../pages/landing.${DATASET}.html">${DATASETNAME}</a></li>
+				        #####
+				        <li><a href="../pages/references.html">References</a></li>
+					 </ul>
+
+				<section>
+					<div class="content">
+						<div class="inner">
+							<header class="major">
+								<h3>${DATASET}</h3>
+							</header>
+							<p>${DATASETDESCRIPTION}</p>
+							<ul class="actions">
+								<li><a href="pages/landing.${DATASET}.html" class="button special">View Data</a></li>
+							</ul>
+						</div>
+					</div>
+				</section>
+		- loop over datasets (tricky part - how to generalize this recursion? N depth)
+			* build landing page for each dataset
+			* build tile pages for each observation in dataset
